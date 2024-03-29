@@ -1,7 +1,4 @@
 package Lab4;
-
-import java.util.Scanner;
-
 public class Tasks {
     //#1
     public static void printThreeWords(){
@@ -57,7 +54,7 @@ public class Tasks {
         for (int i : arr) {
             System.out.print(i + " ");
         }
-        System.out.println();
+        System.out.println("\n");
     }
     //#11
     public static void fillArray() {
@@ -68,6 +65,7 @@ public class Tasks {
         for (int i : arr) {
             System.out.print(i + " ");
         }
+        System.out.println("\n");
     }
     //#12
     public static void doubleLessThan6() {
@@ -80,6 +78,7 @@ public class Tasks {
         for (int i : arr) {
             System.out.print(i + " ");
         }
+        System.out.println("\n");
     }
     //#13
     public static void fillDiagonal() {
@@ -92,7 +91,9 @@ public class Tasks {
             for (int j = 0; j < size; j++) {
                 System.out.print(array[i][j] + " ");
             }
+            System.out.println();
         }
+        System.out.println();
     }
     //#14
     public static int[] initArray(int len, int initialValue) {
