@@ -4,7 +4,7 @@ public class Person {
     private String name;
     private String position;
     private String email;
-    private int phone;
+    private int phoneNumber;
     private int salary;
     private int age;
 
@@ -12,7 +12,7 @@ public class Person {
         this.name = name;
         this.position = position;
         this.email = email;
-        this.phone = phone;
+        this.phoneNumber = phone;
         this.salary = salary;
         this.age = age;
     }
@@ -20,7 +20,7 @@ public class Person {
         System.out.println("ФИО: " + name +
                 "; должность: " + position +
                 "; email: " + email +
-                "; телефон: " + phone +
+                "; телефон: " + phoneNumber +
                 "; зарплата: " + salary +
                 "; возраст: "+  + age);
     }
