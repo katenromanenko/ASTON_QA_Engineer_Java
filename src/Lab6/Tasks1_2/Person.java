@@ -22,6 +22,6 @@ public class Person {
                 "; email: " + email +
                 "; телефон: " + phoneNumber +
                 "; зарплата: " + salary +
-                "; возраст: "+  + age);
+                "; возраст: " + age);
     }
 }

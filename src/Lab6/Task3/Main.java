@@ -10,4 +10,4 @@ public class Main {
         attraction1.info();
         attraction2.info();
     }
-    }
+}
