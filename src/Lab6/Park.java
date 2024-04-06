@@ -1,4 +1,4 @@
-package Lab6.Task3;
+package Lab6;
 
 public class Park {
     public class Attraction {
