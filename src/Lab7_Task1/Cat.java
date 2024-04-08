@@ -1,8 +1,8 @@
 package Lab7_Task1;
 
 public class Cat extends Animal{
-    private String name;
-    private int appetite;
+    private final String name;
+    private final int appetite;
     private boolean hungry;
     static int countCat = 0;
 

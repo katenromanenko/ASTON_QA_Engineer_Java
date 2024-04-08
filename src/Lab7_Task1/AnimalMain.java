@@ -27,5 +27,8 @@ public class AnimalMain {
             cat.eat(plate);
             cat.info();
         }
+
+        plate.addFood(20);
+        System.out.println("В тарелке осталось: " + plate.food + " единиц еды");
     }
 }
