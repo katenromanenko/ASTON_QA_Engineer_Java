@@ -1,7 +1,7 @@
 package Lab8;
 
 public class ArrayProcessor {
-    public void processArray(String[][] array) throws MyArraySizeException {
+    public int processArray(String[][] array) throws MyArraySizeException, MyArrayDataException {
         if (array.length != 4) {
             throw new MyArraySizeException("Массив должен быть размером 4х4");
         }
@@ -10,11 +10,17 @@ public class ArrayProcessor {
                 throw new MyArraySizeException("Массив должен быть размером 4х4");
             }
         }
-        for (String[] row : array) {
-            for (String element : row) {
-                System.out.print(element + " ");
+        int sum = 0;
+        for (int i = 0; i < array.length; i++) {
+            for (int j = 0; j < array[i].length; j++) {
+                try {
+                    sum += Integer.parseInt(array[i][j]);
+                } catch (NumberFormatException e) {
+                    throw new MyArrayDataException("Неверные данные в ячейке [" + i + "][" + j + "]");
+                }
             }
-            System.out.println();
         }
+        return sum;
     }
 }
+
