@@ -3,7 +3,7 @@ package src.Lab10;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class FactorialTestWithJUnit5 {
+public class FactorialTest {
     @Test
     public void testFactorial() {
         assertEquals(1, Factorial.factorial(0));
